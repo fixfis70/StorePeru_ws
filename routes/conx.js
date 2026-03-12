@@ -6,7 +6,6 @@ const conx = mysql.createConnection({
     password: 'xI!Xg.bo^MGGQr^jdraScZ^@',
     database: 's15_storeperu'
 })
-
 conx.connect((err) => {
     if (err) {
         console.error('Error de conexión:', err);

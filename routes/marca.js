@@ -1,4 +1,4 @@
-const db = require("/routes/conx");
+const db = require("routes/conx");
 const express = require('express');
 const router = express.Router();
 

@@ -1,6 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const marca = require("./routes/marca");
+const marca = require("routes/marca");
 
 const app = express()
 
