@@ -2,13 +2,14 @@ const express = require('express');
 const bodyParser = require('body-parser');
 //obtengo el objeto ruta de marca (importado por la exportacion de module.exports)
 const marca = require("./routes/marca");
+const producto = require("./routes/producto");
 
 const app = express()
 
 app.use(bodyParser.json())
-
-// asigno el objeto ruta de marca a la ruta "/marca"
+// asigno el objeto ruta de marca a la ruta "/marca" y lo mismo con producto :V
 app.use("/marca",marca)
+app.use("/producto",producto)
 
 //un simple recibimiento para el "/"
 app.get("/",(req,res)=>{
