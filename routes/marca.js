@@ -23,7 +23,9 @@ router.post("/", (input, output) => {
 
         db.query(sql,[marca],(err,result)=>{
             if(err){
-                return output.status(500).send(err);
+                return output.status(500).send({
+                    mensaje: err.message
+                });
             }
 
             return output.status(200).send({

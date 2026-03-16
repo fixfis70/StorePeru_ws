@@ -21,7 +21,9 @@ router.post("/", (input, output) => {
 
     db.query(sql,[producto,descripcion,precio,stock,garantia,id_marca],(err,result)=>{
         if(err){
-            return output.status(500).send(err);
+            return output.status(500).send({
+                mensaje: err.message
+            });
         }
         return output.status(200).send({
             mensaje: "Producto registrado",
