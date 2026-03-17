@@ -1,0 +1,11 @@
+POST http://localhost:25568/producto
+Content-Type: application/json
+
+{
+  "producto": "monitorgod",
+  "descripcion": "un buen monitor!",
+  "precio" : 12.3,
+  "stock": 54,
+  "garantia": 2,
+  "id_marca":7
+}
